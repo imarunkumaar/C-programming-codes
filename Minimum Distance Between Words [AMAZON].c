@@ -5,6 +5,7 @@
 // The second line will contain W1.
 // The third line will contain W2.
 
+
 // Output Format:
 // The first line will contain D - the minimum distance between W1 and W2 in S.
 
