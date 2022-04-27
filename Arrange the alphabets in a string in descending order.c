@@ -8,7 +8,6 @@
 // If the input is "cake", the output should be "keca"
 // If the input is "innovation", the output should be "vtonia" (n or o or i should not be repeated)
 // code:
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -16,10 +15,16 @@ int main()
 {
     char str[100],arr[100];
     scanf("%s",str);
+    
+    
+    
+    
+    
     int i,j,check=0,k=0;
+    
     int len=strlen(str);
-    for(i=0;i<len;i++){
-        for(j=0;j<i;j++){
+    for(int i=0;i<len;i++){
+        for(int j=0;j<i;j++){
             if(str[i]==str[j]){
                 check=1;
             }
@@ -30,8 +35,8 @@ int main()
         }
         check=0;
     }
-    for(i=0;i<k;i++){
-        for(j=i+1;j<k;j++){
+    for(int i=0;i<k;i++){
+        for(int j=i+1;j<k;j++){
             if(arr[i]<arr[j]){
                 char temp=arr[i];
                 arr[i]=arr[j];
@@ -39,6 +44,8 @@ int main()
             }
         }
     }
-    printf("%s",arr);
+    for(i=0;i<k;i++){
+        printf("%c",arr[i]);
+    }
 }
         
