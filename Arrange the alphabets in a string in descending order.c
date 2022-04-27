@@ -15,11 +15,6 @@ int main()
 {
     char str[100],arr[100];
     scanf("%s",str);
-    
-    
-    
-    
-    
     int i,j,check=0,k=0;
     
     int len=strlen(str);
